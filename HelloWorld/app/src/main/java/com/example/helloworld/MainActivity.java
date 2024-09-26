@@ -1,6 +1,8 @@
 package com.example.helloworld;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+//        TextView txtHello = findViewById(R.id.textMsg);
+//        txtHello.setText("Early in the morning..");`
+    }
+
+    public void btnClick(View view)
+    {
+        TextView txtMessage = findViewById(R.id.textMsg);
+        txtMessage.setText("Graduation Wakadinali");
     }
 }
