@@ -2,6 +2,7 @@ package com.example.helloworld;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -28,7 +29,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnClick(View view)
     {
+        EditText textUserName = findViewById(R.id.textUserName);
+//        textUserName.getText().toString();
         TextView txtMessage = findViewById(R.id.textMsg);
-        txtMessage.setText("Graduation Wakadinali");
+//        txtMessage.setText("Graduation Wakadinali");
+        txtMessage.setText("Hello " + textUserName.getText().toString());
     }
+
 }
+//C:\Users\alson\AndroidStudioProjects\Android_Development\HelloWorld\app\src\main\java\com\example\helloworld
