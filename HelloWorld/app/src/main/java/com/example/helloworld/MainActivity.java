@@ -24,17 +24,34 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 //        TextView txtHello = findViewById(R.id.textMsg);
-//        txtHello.setText("Early in the morning..");`
+//        txtHello.setText("Early in the morning..");
     }
 
     public void btnClick(View view)
     {
-        EditText textUserName = findViewById(R.id.textUserName);
+        // introduction part
+//        EditText textUserName = findViewById(R.id.textUserName);
 //        textUserName.getText().toString();
-        TextView txtMessage = findViewById(R.id.textMsg);
+//        TextView txtMessage = findViewById(R.id.textMsg);
 //        txtMessage.setText("Graduation Wakadinali");
-        txtMessage.setText("Hello " + textUserName.getText().toString());
+//        txtMessage.setText("Hello " + textUserName.getText().toString());
+
+        //challenge part 1
+        // getting input fields
+        EditText userName = findViewById(R.id.userName);
+        EditText userEmail = findViewById(R.id.userEmail);
+        EditText userAge = findViewById(R.id.userAge);
+
+        // getting display fields
+        TextView  usrName = findViewById(R.id.usrName);
+        TextView usrEmail = findViewById(R.id.usrEmail);
+        TextView usrAge = findViewById(R.id.usrAge);
+
+        // to set the text of each of the text message
+        usrName.setText(userName.getText().toString());
+        usrEmail.setText(userEmail.getText().toString());
+        usrAge.setText(userAge.getText());
+
     }
 
 }
-//C:\Users\alson\AndroidStudioProjects\Android_Development\HelloWorld\app\src\main\java\com\example\helloworld
