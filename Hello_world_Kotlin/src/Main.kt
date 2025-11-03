@@ -2,21 +2,41 @@ import javax.xml.stream.events.Characters
 
 fun main() {
     println("Hello World")
-    sayHello(54, "Mr. James")
-    println("Sum of ${doulbleSum(5.0, 2.2, 3)}")
-    concatenateStrings("Cause when we play", "Sofia the first")
-    galaxy(age=130000000)
-    gettingArrays()
-    val myMaxArray = arrayOf(1, 3, 5, 7, 9, 23, 29, 17)
-    val myMinArray = arrayOf(13, 11,23, 29,31, 37)
-    println(findMax(myMaxArray))
-    println(findMin(myMinArray))
-    val returnedValue = findNumber(5, myMaxArray)
-    if (returnedValue != null)
-    {
-        println("Found number is")
-        println("Found Number is $returnedValue")
-    }
+//    sayHello(54, "Mr. James")
+//    println("Sum of ${doulbleSum(5.0, 2.2, 3)}")
+//    concatenateStrings("Cause when we play", "Sofia the first")
+//    galaxy(age=130000000)
+//    gettingArrays()
+//    val myMaxArray = arrayOf(1, 3, 5, 7, 9, 23, 29, 17)
+//    val myMinArray = arrayOf(13, 11,23, 29,31, 37)
+//    println(findMax(myMaxArray))
+//    println(findMin(myMinArray))
+//    val returnedValue = findNumber(5, myMaxArray)
+//    if (returnedValue != null)
+//    {
+//        println("Found number is")
+//        println("Found Number is $returnedValue")
+//    }
+
+    var car1 = Car()
+    car1.distance = 10000
+    car1.brand = "Mercedez"
+    car1.name = "E250"
+    car1.price = 2500000
+
+    car1.move()
+    car1.stop()
+
+
+    var car2 = Car()
+    car2.name  = "Tesla"
+    car2.brand = "EV"
+    car2.distance = 10000
+
+
+    println("\n")
+    println("The car ${car2.name} can travel to up to a distance of ${car2.distance} without refueling")
+    println("The car is of type : ${car2.brand}")
 }
 
 fun introduction()
@@ -183,3 +203,24 @@ fun findNumber(myVal: Int, myArray:Array<Int>): Int?
     return null
 }
 
+class Car()
+{
+    var name = ""
+    var brand = ""
+    var price = 0
+    var distance = 0
+
+
+    fun travelledDistance(): String
+    {
+        return "The car $name has travelled for ${distance}km"
+    }
+    fun move()
+    {
+        println("The car $name is moving")
+    }
+    fun stop()
+    {
+        println("The car $name has stopped moving ")
+    }
+}
