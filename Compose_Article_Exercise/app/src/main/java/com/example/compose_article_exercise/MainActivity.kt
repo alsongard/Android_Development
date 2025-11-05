@@ -30,13 +30,19 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Compose_Article_ExerciseTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    JetPackTutorial(stringResource(R.string.header), stringResource(R.string.subheader),
-                        stringResource(R.string.content)
-                    )
+//                Surface(
+//                    modifier = Modifier.fillMaxSize(),
+//                    color = MaterialTheme.colorScheme.background
+//                ) {
+//                    JetPackTutorial(stringResource(R.string.header), stringResource(R.string.subheader),
+//                        stringResource(R.string.content)
+//                    )
+//                }
+
+                Scaffold()
+                {
+                    innerPadding-> JetPackTutorial( stringResource(R.string.header), stringResource(R.string.subheader),
+                    stringResource(R.string.content),  modifier = Modifier.padding(innerPadding))
                 }
 
             }
