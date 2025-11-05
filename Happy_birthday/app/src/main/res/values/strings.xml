@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Happy_birthday</string>
+    <string name="happy_birthday_text">Happy Birthday Jupiter</string>
+    <string name="from_text">From Kali Linux</string>
 </resources>
