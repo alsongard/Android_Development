@@ -54,13 +54,17 @@ fun Notes(modifier:Modifier = Modifier)
                 .fillMaxWidth()
         ){
             Box (
+                contentAlignment = Alignment.Center,
                 modifier = Modifier
-                    .background(color = Color.hsl(279f, 0.75f, 0.79f))
+                    .background(color = Color.hsl(278f, 0.85f, 0.95f))
+                    .height(420.dp)
             ) {
                 Column(
+
                     modifier = modifier
                         .padding(5.dp)
                         .height(160.dp)
+
                 ) {
                     Text(
                         text = "Text composable",
@@ -75,8 +79,11 @@ fun Notes(modifier:Modifier = Modifier)
             }
 
             Box (
+                contentAlignment = Alignment.Center,
                 modifier = Modifier
-                    .background(color = Color.hsl(278f, 0.85f, 0.50f))
+//                    hsl(278 85 77)
+                    .background(color = Color.hsl(278f, 0.85f, 0.77f))
+                    .height(420.dp)
             )
             {
                 Column(
@@ -104,10 +111,12 @@ fun Notes(modifier:Modifier = Modifier)
                 .fillMaxSize()
                 .fillMaxWidth()
         ) {
+//                    hsl(278 85 68)
             Box (
-                    modifier = Modifier
-                        .background(color = Color.hsl(275f, 0.52f, 0.48f))
-
+                contentAlignment = Alignment.Center,
+                modifier = Modifier
+                    .background(color = Color.hsl(278f, 0.85f, 0.77f))
+                    .height(420.dp)
             ) {
                 Column(
                     modifier = modifier
@@ -128,9 +137,11 @@ fun Notes(modifier:Modifier = Modifier)
             }
 
             Box(
+                contentAlignment = Alignment.Center,
                 modifier = Modifier
-                    .background(color = Color.hsl(279f, 0.48f, 0.79f))
-
+//                    hsl(276 16 94)
+                    .background(color = Color.hsl(276f, 0.16f, 0.94f))
+                    .height(420.dp)
             ) {
                 Column(
                     modifier = modifier
