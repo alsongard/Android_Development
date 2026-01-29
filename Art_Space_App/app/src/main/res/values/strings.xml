@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Art_Space_App</string>
+    <string name="sasukeTitle">Uchiha Clan</string>
+    <string name="sasukeDescription">Sharingan: Eternal Mangekyo Sharingan</string>
+    <string name="darkGothTitle">Dark Elegance</string>
+    <string name="darkGothDescription">A Gothic Loita</string>
+    <string name="katanaTitle">Katana Sensei</string>
+    <string name="katanaDescription">Unleash my worth</string>
+    <string name="chillOutTitle">Chill Out </string>
+    <string name="chillOutDescription">After the Hustle</string>
+
+
+</resources>
