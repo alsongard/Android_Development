@@ -22,7 +22,6 @@ enum class Difficulty {
     EASY, MEDIUM, HARD
 }
 
-
 class Quiz()
 {
     val question1 = Question<String>("Quoth the raven __", "nvermore", Difficulty.MEDIUM)
@@ -31,7 +30,7 @@ class Quiz()
 	
 // 	question1.getQuestions()
 //     println(question2.toString())
-    companion object StudentProgress  { // using companions to access object : singleton objec
+    companion object StudentProgress  { // using companions to access object : singleton objetc
         var total: Int = 10
         var answered: Int = 5
 	}

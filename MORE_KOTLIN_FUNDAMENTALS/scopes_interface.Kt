@@ -45,22 +45,22 @@ class Quiz: ProgressPrintable
     val question2 = Question<Boolean>("The sky is green. True or false", false, Difficulty.EASY)
     val question3 = Question<Int>("How many days are there between full moons?", 28,Difficulty.HARD)
 	
-// 	question1.getQuestions()
-//     println(question2.toString())
-    companion object StudentProgress  { // using companions to access object : singleton objec
+    //question1.getQuestions()
+    //println(question2.toString())
+    companion object StudentProgress  { // using companions to access object : singleton object
         var total: Int = 10
         var answered: Int = 5
 	}
     
     override val progressString 
-    			get () = "${answered}/${answered} question"
+        get () = "${answered}/${answered} question"
     
     override fun progressBar()
     {
-    	    repeat(Quiz.answered) {print("▓")}
-            repeat(Quiz.total - Quiz.answered) {print("▒")}
-            println("")
-            print(progressString)    
+        repeat(Quiz.answered) {print("▓")}
+        repeat(Quiz.total - Quiz.answered) {print("▒")}
+        println("")
+        print(progressString)    
     }
     
     // using let for accessing object properties: lambda : var someName {} // access varialbes usign it
