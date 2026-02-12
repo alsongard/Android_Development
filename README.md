@@ -39,3 +39,30 @@ This repository is a track for android projects from google android development 
 7. Compose_Article_Exercise
 
 
+8. MORE KOTLIN FUNDAMENTAL
+    * Collections
+        - listOf
+        - mutableListOf
+
+    * Sets
+        - MutableSetOf
+        - MutableMapOf
+
+    * Higher Order Functions
+        - fold
+        - filter
+        - forEach
+        - Map
+        - groupBy
+        - sortedBy
+    
+    * Interfaces
+        When an interface is applied to a class it defines the properties and method that the class should have : for consistency, easy build up for classes
+
+    * Data class
+    * ENUM class
+    * extending class properties
+    * extending class methods
+
+
+
